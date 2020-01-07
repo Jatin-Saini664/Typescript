@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  height: 100vh;
+  background: #333 url('coastal-city-coast.jpg') no-repeat 0% 0% / cover; /* center on both x and y axis */
+  color: tomato;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0.3rem;
+}
+
+h1,
+h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: tomato;
+}
+
+/* cursor */
+.txt-type > .txt {
+  border-right: 0.15rem solid #777;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
